@@ -3,17 +3,17 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Install 단계: 별도 설치 없음"
+      - echo "Install phase - no additional installation needed"
   pre_build:
     commands:
-      - echo "Pre-build 단계"
+      - echo "Pre-build phase"
   build:
     commands:
-      - echo "Maven 빌드 시작"
+      - echo "Starting Maven build"
       - mvn -B clean package
   post_build:
     commands:
-      - echo "빌드 완료, 아티팩트 준비"
+      - echo "Build completed, preparing artifacts"
 
 artifacts:
   files:
